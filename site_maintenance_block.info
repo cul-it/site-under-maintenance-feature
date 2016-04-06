@@ -1,0 +1,16 @@
+name = Site Maintenance Block
+description = Block displays 'Site under maintenance' message and a page to park it on when not in use.
+core = 7.x
+package = Features
+version = 7.x-1.0-alpha4
+project = site_maintenance_block
+dependencies[] = ctools
+dependencies[] = fe_block
+dependencies[] = features
+dependencies[] = strongarm
+__drupal_alter_by_ref[][node][page] = page
+features[ctools][] = strongarm:strongarm:1
+features[fe_block_boxes][] = site_under_maintenance
+features[fe_block_settings][] = block-site_under_maintenance
+features[features_api][] = api:2
+project status url = http://featureserver.test.library.cornell.edu/capdeploy/?q=fserver

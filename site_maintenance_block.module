@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Site Maintenance Block feature.
+ */
+
+include_once 'site_maintenance_block.features.inc';
